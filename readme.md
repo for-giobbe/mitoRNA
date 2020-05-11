@@ -5,12 +5,15 @@
 
 ---
 
+
 Additional tools which are required for running mitoRNA are Bowtie2 and Trinity, which can easily be installed using ```conda```. An help page can be racalled using the command ```-h```.
+
 
 Example of usage: 
 ```
 mitoRNA.py -I reference.fasta -M paired -1 left.fastq -2 right.fastq -P 16 -T metazoa -O output
 ```
+
 
 List of arguments:
 ```
@@ -29,6 +32,8 @@ Optional Arguments:
   -N END        maximum number of iterations
  ```
  
+ 
  ---
+
 
 For citation and additional information read the relative paper [Complete mitochondrial genomes from transcriptomes](https://www.nature.com/articles/s41598-019-51313-7) or get in touch with Giobbe at forni.giobbe@gmail.com.
