@@ -1,5 +1,8 @@
 **mitoRNA** is a Python2.7 wrapper designed to ease the target assembly of mitogenomes from RNA-Seq and a starting referenc(es). The tool uses an iterative approach, alternating *reference-mapping* and *de novo-assembly*, until the number of reads which map to the assemply reach a *plateau*.
 
+![Image description](https://github.com/for-giobbe/mitoRNA/blob/master/pipeline.png)
+
+
 ---
 
 Additional tools which are required for running mitoRNA are Bowtie2 and Trinity, which can easily be installed using ```conda```. An help page can be racalled using the command ```-h```.
