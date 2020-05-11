@@ -1,4 +1,4 @@
-**mitoRNA** is a Python2.7 wrapper designed to ease the target assembly of mitogenomes from RNA-Seq and a starting referenc(es). The tool uses an iterative approach, alternating *reference-mapping* and *de novo-assembly*, until the number of reads which map to the assemply reach a *plateau*.
+**mitoRNA** is a Python2.7 wrapper designed to ease the target assembly of mitogenomes from RNA-Seq and a starting referenc(es). The tool uses an iterative approach, alternating *reference-mapping* and *de novo-assembly*, until the number of reads which map to the assembly reach a *plateau*.
 
 ![Image description](https://github.com/for-giobbe/mitoRNA/blob/master/pipeline.png)
 
