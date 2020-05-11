@@ -1,11 +1,16 @@
-mitoRNA.py is a Python2.7 designed to assemble complete mitogenomes using RNA-Seq data and starting mitogenome(s) as reference. It uses an iterative approach, alternating reference mapping and de novo assembly. Additional tools required for running RNAtoMITO are Bowtie2 and Trinity. An help page can be racalled using the command -h.
+mitoRNA is a Python2.7 wrapper designed to assemble mitogenomes from RNA-Seq data and starting mitogenome(s) as reference. 
+
+The tool uses an iterative approach, alternating **reference-mapping** and **de novo-assembly**. 
+
+Additional tools required for running RNAtoMITO are Bowtie2 and Trinity. An help page can be racalled using the command -h.
 
 ```
 Usage: MitoRNA.py [-h] -R FASTA -M MOD [-1 FASTQ1] [-2 FASTQ2] [-U SINGLE]
                   [-P THREADS] [-T TAXA] -O OUT [-C] [-N END] 
 ```
+example: 
 ```
-example: mitoRNA.py -I reference_mitogenomes.fasta -M paired -1 left.fastq -2 right.fastq -P 16 -T metazoa -O target_mitogenome
+mitoRNA.py -I reference.fasta -M paired -1 left.fastq -2 right.fastq -P 16 -T metazoa -O output
 ```
 ```
 Required Arguments:
