@@ -19,3 +19,5 @@ Optional Arguments:
   -P THREADS    Number of threads, (1)
   -C            Full clean up (delete all intermediate files)
   -N END        maximum number of iterations
+  
+  For further information [Complete mitochondrial genomes from transcriptomes: assessing pros and cons of data mining for assembling new mitogenomes](https://www.nature.com/articles/s41598-019-51313-7)
