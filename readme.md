@@ -1,17 +1,13 @@
-mitoRNA is a Python2.7 wrapper designed to assemble mitogenomes from RNA-Seq data and starting mitogenome(s) as reference. 
+**mitoRNA** is a Python2.7 wrapper designed to ease the target assembly of mitogenomes from RNA-Seq and a starting referenc(es). The tool uses an iterative approach, alternating *reference-mapping* and *de novo-assembly*, until the number of reads which map to the assemply reach a *plateau*.
 
-The tool uses an iterative approach, alternating **reference-mapping** and **de novo-assembly**. 
+Additional tools which are required for running mitoRNA are Bowtie2 and Trinity, which can easily be installed using ```conda```. An help page can be racalled using the command ```-h```.
 
-Additional tools required for running RNAtoMITO are Bowtie2 and Trinity. An help page can be racalled using the command -h.
-
-```
-Usage: MitoRNA.py [-h] -R FASTA -M MOD [-1 FASTQ1] [-2 FASTQ2] [-U SINGLE]
-                  [-P THREADS] [-T TAXA] -O OUT [-C] [-N END] 
-```
-example: 
+Example of usage: 
 ```
 mitoRNA.py -I reference.fasta -M paired -1 left.fastq -2 right.fastq -P 16 -T metazoa -O output
 ```
+
+List of arguments:
 ```
 Required Arguments:
   -h, --help    show this help message and exit
@@ -28,4 +24,4 @@ Optional Arguments:
   -N END        maximum number of iterations
  ```
 
-For further information read the relative paper[Complete mitochondrial genomes from transcriptomes](https://www.nature.com/articles/s41598-019-51313-7)
+For citation and additional information read the relative paper [Complete mitochondrial genomes from transcriptomes](https://www.nature.com/articles/s41598-019-51313-7) or get in touch with [Giobbe](forni.giobbe@gmail.com)
